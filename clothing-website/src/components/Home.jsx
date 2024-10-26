@@ -6,7 +6,6 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import main from './images/images-removebg-preview.png'
 import img1 from './images/IMG-20240723-WA0024.jpg'
 import img2 from './images/IMG-20240723-WA0025.jpg'
-import img3 from './images/IMG-20240723-WA0027.jpg'
 import img4 from './images/images (5).jpeg'
 import img5 from './images/images (4).jpeg'
 import img6 from './images/images (3).jpeg'
@@ -81,7 +80,7 @@ const Home = () => {
     <div className='flex flex-row justify-between mx-3'>
      {/*images section 1*/}
       <div>
-        <img src={img1} alt="" className='w-[30vh] h-[35vh] object-cover' />
+        <img src={img2} alt="" className='w-[30vh] h-[35vh] object-cover' />
         <div className='text-center font-bold'>
           <p className='mb-2'>Name of the product</p>
         <div className='flex flex-row justify-center'>
@@ -109,7 +108,7 @@ const Home = () => {
       
      {/*images section 1*/}
      <div>
-        <img src={img1} alt="" className='w-[30vh] h-[35vh] object-cover' />
+        <img src={img2} alt="" className='w-[30vh] h-[35vh] object-cover' />
         <div className='text-center font-bold'>
           <p className='mb-2'>Name of the product</p>
         <div className='flex flex-row justify-center'>
@@ -154,18 +153,18 @@ const Home = () => {
       </ul>
     </div>
       {/*images*/}
-      <div className='flex justify-center items-center min-h-screen'>
-  <div className='grid grid-cols-4 gap-4'>
+      <div className='flex justify-center items-center min-h-screen '>
+  <div className='grid grid-cols-4 gap-x-5 gap-y-20 '>
     {/* Image 4 */}
-    <div className="flex flex-col justify-between items-center w-[30vh] h-[40vh]">
+    <div className="flex flex-col justify-between items-center w-[30vh] h-[40vh] ">
   {/* Image */}
   <img src={img4} alt="" className="w-full h-[35vh] object-cover" />
 
   {/* Text at the bottom */}
-  <div className="text-center font-bold mt-auto">
-    <p className="mb-2">Name of the product</p>
+  <div className="text-center font-bold mt-auto ">
+    <p className="mb-2">Summer Wind T-shirt </p>
     <div className="flex items-center justify-center">
-      <p>$38.99 | 5.0</p>
+      <p>$31.99 | 4.2</p>
       <svg
         className="w-4 h-4 text-yellow-300 ms-1"
         aria-hidden="true"
@@ -186,9 +185,9 @@ const Home = () => {
 
   {/* Text at the bottom */}
   <div className="text-center font-bold mt-auto">
-    <p className="mb-2">Name of the product</p>
+    <p className="mb-2">Tailored Jacket</p>
     <div className="flex items-center justify-center">
-      <p>$38.99 | 5.0</p>
+      <p>$38.99 | 4.5</p>
       <svg
         className="w-4 h-4 text-yellow-300 ms-1"
         aria-hidden="true"
@@ -210,9 +209,10 @@ const Home = () => {
 
   {/* Text at the bottom */}
   <div className="text-center font-bold mt-auto">
-    <p className="mb-2">Name of the product</p>
+    <p className="mb-2">Formal Classic suit
+    </p>
     <div className="flex items-center justify-center">
-      <p>$38.99 | 5.0</p>
+      <p>$50.00 | 5.0</p>
       <svg
         className="w-4 h-4 text-yellow-300 ms-1"
         aria-hidden="true"
@@ -232,9 +232,9 @@ const Home = () => {
 
   {/* Text at the bottom */}
   <div className="text-center font-bold mt-auto">
-    <p className="mb-2">Name of the product</p>
+    <p className="mb-2">White Solid Formal T-shirt </p>
     <div className="flex items-center justify-center">
-      <p>$38.99 | 5.0</p>
+      <p>$42.09 | 5.0</p>
       <svg
         className="w-4 h-4 text-yellow-300 ms-1"
         aria-hidden="true"
@@ -255,9 +255,10 @@ const Home = () => {
 
   {/* Text at the bottom */}
   <div className="text-center font-bold mt-auto">
-    <p className="mb-2">Name of the product</p>
+    <p className="mb-2">Tailored Jacket
+    </p>
     <div className="flex items-center justify-center">
-      <p>$38.99 | 5.0</p>
+      <p>$41.03 | 5.0</p>
       <svg
         className="w-4 h-4 text-yellow-300 ms-1"
         aria-hidden="true"
@@ -278,9 +279,9 @@ const Home = () => {
 
   {/* Text at the bottom */}
   <div className="text-center font-bold mt-auto">
-    <p className="mb-2">Name of the product</p>
+    <p className="mb-2">Solid White Summer T-shirt</p>
     <div className="flex items-center justify-center">
-      <p>$38.99 | 5.0</p>
+      <p>$29.99 | 4.5</p>
       <svg
         className="w-4 h-4 text-yellow-300 ms-1"
         aria-hidden="true"
@@ -301,9 +302,11 @@ const Home = () => {
 
   {/* Text at the bottom */}
   <div className="text-center font-bold mt-auto">
-    <p className="mb-2">Name of the product</p>
+    <p className="mb-2">Classic Top
+    </p>
     <div className="flex items-center justify-center">
-      <p>$38.99   |    5.0</p>
+      <p>$24.54 | 3.8
+      </p>
       <svg
         className="w-4 h-4 text-yellow-300 ms-1"
         aria-hidden="true"
@@ -324,7 +327,7 @@ const Home = () => {
 
   {/* Text at the bottom */}
   <div className="text-center font-bold mt-auto">
-    <p className="mb-2">Name of the product</p>
+    <p className="mb-2">Formal Jeans </p>
     <div className="flex items-center justify-center">
       <p>$38.99 | 5.0</p>
       <svg
@@ -403,7 +406,7 @@ risus donec quis donec vel.</p></div>
       
       {/*img1*/}
       <div>
-        <img src={img6} alt="" className='w-[40vh] h-[50vh] object-cover' />
+        <img src={img1} alt="" className='w-[40vh] h-[50vh] object-cover' />
         <div className='text-center text-gray-700 font-bold'><p className='text-3xl mt-5'>Accessories </p>
         <p className='text-lg mt-4'>Lorem ipsum dolor sit amet <br />
 consectetur. Mi enim a curabitur <br /> odio
