@@ -4,12 +4,12 @@ import Home from './components/Home'
 import Products from './components/Products'
 import Productpage from './components/Productpage'
 import Aboutus from './components/Aboutus'
+import Login from './components/Login'
 
 const App = () => {
   return (
     <div>
-      <Aboutus></Aboutus>
-      <Footer></Footer>
+      <Login></Login>
     </div>
   )
 }
