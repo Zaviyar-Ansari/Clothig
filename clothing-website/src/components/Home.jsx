@@ -15,6 +15,7 @@ import img9 from './images/HOMEPAGE_BOTTOM_LEFT.e316e95e.png'
 import img10 from './images/istockphoto-1425640652-612x612.jpg'
 import img11 from './images/istockphoto-912700154-612x612.jpg'
 import img12 from './images/HOMEPAGE_page-0001__2_-removebg-preview.png'
+import { Link } from 'react-router-dom';
 
 const Home = () => {
         const rows = 4;
@@ -27,13 +28,13 @@ const Home = () => {
             <h1 className='text-3xl text-primary3 font-bold'>LOGO</h1>
             <div className='flex flex-row gap-20 mt-2 text-primary3 text-lg font-semibold'>
             <ul className='flex flex-row gap-10'>
-                <li className='hover:underline underline-offset-4'>Home</li>
-                <li className='hover:underline underline-offset-4'>Shop</li>
-                <li className='hover:underline underline-offset-4'>Feature</li>
-                <li className='hover:underline underline-offset-4'>Contact</li>
+                <Link to="/"><li className='hover:underline underline-offset-4'>Home</li></Link>
+                <Link to="/products"><li className='hover:underline underline-offset-4'>Shop</li></Link>
+                <Link to="productspage"><li className='hover:underline underline-offset-4'>Feature</li></Link>
+                <Link to="/about"><li className='hover:underline underline-offset-4'>Contact</li></Link>
             </ul>
            <FontAwesomeIcon icon={faShoppingBag} className="text-2xl text-gray-600 hover:text-gray-800" />
-            <button className='text-black border-2 border-primary3 solid px-3 rounded-lg'>LOGIN</button>
+            <Link to="/login"><button className='text-black border-2 border-primary3 solid px-3 rounded-lg'>LOGIN</button></Link>
             </div>
         </div>
         {/*after navbar text and image*/}

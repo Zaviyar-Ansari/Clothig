@@ -5,6 +5,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import img1 from './images/IMG-20240723-WA0024.jpg'
+import { Link } from 'react-router-dom';
 const Productpage = () => {
   return (
     <div>
@@ -25,16 +26,17 @@ const Productpage = () => {
     </div>
     
     <ul className='flex mt-4 text-primary3 space-x-14'>
-      <li className='hover:underline underline-offset-4'>HOME</li>
-      <li className='hover:underline underline-offset-4'>SHOP</li>
-      <li className='hover:underline underline-offset-4'>ABOUT US</li>
-      <li className='hover:underline underline-offset-4'>CONTACT</li>
+      <Link to="/"><li className='hover:underline underline-offset-4'>Home</li></Link>
+      <Link to="/products"><li className='hover:underline underline-offset-4'>Shop</li></Link>
+      <Link to="productspage"><li className='hover:underline underline-offset-4'>Feature</li></Link>
+      <Link to="/about"><li className='hover:underline underline-offset-4'>Contact</li></Link>
     </ul>
   </div>
   
   <div className='flex items-center space-x-10'>
     <FontAwesomeIcon icon={faShoppingBag} className="text-2xl text-gray-600 hover:text-gray-800" />
-    <button className='px-5 py-2 border-2 border-primary3 rounded-xl'>LOGIN</button>
+    <Link to='/login'><button className='px-5 py-2 border-2 border-primary3 rounded-xl'>LOGIN</button>
+    </Link>
   </div>
 </div>
 

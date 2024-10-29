@@ -1,17 +1,27 @@
-import React from 'react'
-import Footer from './components/Footer'
-import Home from './components/Home'
-import Products from './components/Products'
-import Productpage from './components/Productpage'
-import Aboutus from './components/Aboutus'
-import Login from './components/Login'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer';
+import Home from './components/Home';
+import Products from './components/Products';
+import Productpage from './components/Productpage';
+import Aboutus from './components/Aboutus';
+import Login from './components/Login';
 
 const App = () => {
   return (
-    <div>
-      <Login></Login>
-    </div>
-  )
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/productspage" element={<Productpage />} />
+          <Route path="/about" element={<Aboutus />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;

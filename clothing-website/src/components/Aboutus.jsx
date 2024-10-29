@@ -2,6 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingBag } from '@fortawesome/free-solid-svg-icons';
 import img1 from './images/IMG-20240723-WA0024.jpg'
+import { Link } from 'react-router-dom';
 const Aboutus = () => {
   return (
     <div>
@@ -10,13 +11,13 @@ const Aboutus = () => {
             <h1 className='text-3xl font-bold text-primary3'>LOGO</h1>
             <div className='flex flex-row gap-20 mt-2 text-lg font-semibold text-primary3'>
             <ul className='flex flex-row gap-10'>
-                <li className='hover:underline underline-offset-4'>Home</li>
-                <li className='hover:underline underline-offset-4'>Shop</li>
-                <li className='hover:underline underline-offset-4'>Feature</li>
-                <li className='hover:underline underline-offset-4'>Contact</li>
+            <Link to="/"><li className='hover:underline underline-offset-4'>Home</li></Link>
+                <Link to="/products"><li className='hover:underline underline-offset-4'>Shop</li></Link>
+                <Link to="productspage"><li className='hover:underline underline-offset-4'>Feature</li></Link>
+                <Link to="/about"><li className='hover:underline underline-offset-4'>Contact</li></Link>
             </ul>
            <FontAwesomeIcon icon={faShoppingBag} className="text-2xl text-gray-600 hover:text-gray-800" />
-            <button className='px-3 text-black border-2 rounded-lg border-primary3 solid'>LOGIN</button>
+            <Link to="/login"><button className='px-3 text-black border-2 rounded-lg border-primary3 solid'>LOGIN</button></Link>
             </div>
         </div>
 
