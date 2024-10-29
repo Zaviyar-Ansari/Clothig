@@ -1,7 +1,13 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingBag } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import img1 from './images/IMG-20240723-WA0024.jpg'
+import img2 from './images/shrits.jpeg'
+import img3 from './images/Premium Photo _ Business team working on laptop to check the results of their work_.jpeg'
+import img4 from './images/4 essential lessons in AI governance.jpeg'
+import img5 from './images/team person.jpeg'
+import img6 from './images/download (3).jpeg'
 import { Link } from 'react-router-dom';
 const Aboutus = () => {
   return (
@@ -13,7 +19,7 @@ const Aboutus = () => {
             <ul className='flex flex-row gap-10'>
             <Link to="/"><li className='hover:underline underline-offset-4'>Home</li></Link>
                 <Link to="/products"><li className='hover:underline underline-offset-4'>Shop</li></Link>
-                <Link to="productspage"><li className='hover:underline underline-offset-4'>Feature</li></Link>
+                <Link to="/productspage"><li className='hover:underline underline-offset-4'>Feature</li></Link>
                 <Link to="/about"><li className='hover:underline underline-offset-4'>Contact</li></Link>
             </ul>
            <FontAwesomeIcon icon={faShoppingBag} className="text-2xl text-gray-600 hover:text-gray-800" />
@@ -44,7 +50,7 @@ define your unique style.</p>
             <h1 className='py-10 text-3xl font-bold text-center text-primary1'>Our Missions</h1>
             <div className='flex flex-row items-center justify-start'>
                 <div className='w-1/3'>
-                    <img src={img1} alt="" className='w-[50vh] h-[40vh] object-cover' />
+                    <img src={img2} alt="" className='w-[50vh] h-[40vh] object-cover' />
                 </div>
                 <div className='w-[100vh] mx-10'>
                     <p className='text-lg font-poppins'>Our mission is simple: to inspire and empower youngsters to express
@@ -60,10 +66,10 @@ range of clothing is designed to cater to every mood and moment.</p>
 
         {/*team section*/}
         <div className='flex flex-row justify-between ' >
-            <img src={img1} alt="" className='w-[30vh] h-[30vh] object-cover' />
-            <img src={img1} alt="" className='w-[30vh] h-[30vh] object-cover' />
-            <img src={img1} alt="" className='w-[30vh] h-[30vh] object-cover' />
-            <img src={img1} alt="" className='w-[30vh] h-[30vh] object-cover ' />
+            <img src={img3} alt="" className='w-[30vh] h-[30vh] object-cover' />
+            <img src={img6} alt="" className='w-[30vh] h-[30vh] object-cover' />
+            <img src={img5} alt="" className='w-[30vh] h-[30vh] object-cover' />
+            <img src={img4} alt="" className='w-[30vh] h-[30vh] object-cover ' />
         </div>
 
 
@@ -92,6 +98,57 @@ range of clothing is designed to cater to every mood and moment.</p>
             </div>
 
         </div>
+        {/*footer*/}
+        <div className='bg-primary1'>
+
+{/*starting part of the footer*/}
+<div className=' text-white flex flex-row justify-evenly py-10 mb-20'>
+   <div>
+       <h1 className='text-3xl font-semibold font-poppins mb-10'>LOGO</h1>
+       <p className='mb-6'>SOCIAL MEDIA</p>
+       <div className='space-x-4'>
+       <FontAwesomeIcon icon={faTwitter} className="text-white text-2xl hover:text-primary2" />
+       <FontAwesomeIcon icon={faInstagram} className="text-white text-2xl hover:text-primary2" />
+       <FontAwesomeIcon icon={faFacebookF} className="text-primary2 text-2xl" />
+       </div>
+
+   </div>
+   <div className=' font-poppins'>  
+       <p className='mb-5'>SHOP</p>
+       <ul className='space-y-4'>
+           <li>Products</li>
+           <li>Overview</li>
+           <li>Pricing</li>
+           <li>Releases</li>
+       </ul>
+   </div>
+   <div className=' font-poppins'>
+       <p className='mb-5'>COMPANY</p>
+       <ul className='space-y-4'>
+           <li>About</li>
+           <li>Contact</li>
+           <li>News</li>
+           <li>Support</li>
+       </ul>
+   </div>
+   <div className=' font-poppins'>
+       <h1 className='mb-6'>Stay up to date</h1>
+       <div>
+       <input type="email"  className='py-1 bg-transparent border-white border-2 solid px-3 text-white' placeholder='Enter your Email'/>
+       <button className='bg-primary2 text-sm py-2 px-3 text-center text-black '>SUBMIT</button>
+       </div>
+   </div>
+</div>
+{/*last part of the footer*/}
+<div className='w-full flex flex-row justify-center space-x-10' >
+<hr className="border-2 border-white solid w-[85vh]" />
+<ul className='text-white font-semibold flex flex-row gap-10 -mt-3 mb-20'>
+   <li>Terms</li>
+   <li>Privacy</li>
+   <li>Cookies</li>
+</ul>
+</div>
+</div>
     </div>
   )
 }

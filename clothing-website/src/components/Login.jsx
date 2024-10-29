@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faLock } from '@fortawesome/free-solid-svg-icons';
 import bgimg from './images/WhatsApp Image 2024-10-28 at 5.39.15 PM.jpeg'
 import google from './images/google.png'
+import { Link } from 'react-router-dom';
 const Login = () => {
   return (
     <div className='relative'>
@@ -25,7 +26,7 @@ const Login = () => {
             <img src={google} alt="" className='w-[3vh] h-[3vh]' />
             <button>Or, sign-in with Google</button>
         </div>
-        <p className='font-bold'>Not a member yet? <span className='text-sm text-primary1'> Register!</span></p>
+        <p className='font-bold'>Not a member yet? <span className='text-sm text-primary1'> Register! <Link to="/"><p>Back</p></Link></span></p>
     </div>
 </div>
 

@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingBag } from '@fortawesome/free-solid-svg-icons';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import main from './images/images-removebg-preview.png'
 import img1 from './images/IMG-20240723-WA0024.jpg'
 import img2 from './images/IMG-20240723-WA0025.jpg'
@@ -30,7 +31,7 @@ const Home = () => {
             <ul className='flex flex-row gap-10'>
                 <Link to="/"><li className='hover:underline underline-offset-4'>Home</li></Link>
                 <Link to="/products"><li className='hover:underline underline-offset-4'>Shop</li></Link>
-                <Link to="productspage"><li className='hover:underline underline-offset-4'>Feature</li></Link>
+                <Link to="/productspage"><li className='hover:underline underline-offset-4'>Feature</li></Link>
                 <Link to="/about"><li className='hover:underline underline-offset-4'>Contact</li></Link>
             </ul>
            <FontAwesomeIcon icon={faShoppingBag} className="text-2xl text-gray-600 hover:text-gray-800" />
@@ -458,6 +459,58 @@ and comfortable. Highly satisfied!jasjdlfajs  falsj jdsjdf lkjuwio  oweur </p>
     <FontAwesomeIcon icon={faChevronLeft}  className='bg-white p-3'/>
     <FontAwesomeIcon icon={faChevronRight} className='bg-primary2 p-3' />
     </div>
+
+    {/*footer*/}
+    <div className='bg-primary1'>
+
+{/*starting part of the footer*/}
+<div className=' text-white flex flex-row justify-evenly py-10 mb-20'>
+   <div>
+       <h1 className='text-3xl font-semibold font-poppins mb-10'>LOGO</h1>
+       <p className='mb-6'>SOCIAL MEDIA</p>
+       <div className='space-x-4'>
+       <FontAwesomeIcon icon={faTwitter} className="text-white text-2xl hover:text-primary2" />
+       <FontAwesomeIcon icon={faInstagram} className="text-white text-2xl hover:text-primary2" />
+       <FontAwesomeIcon icon={faFacebookF} className="text-primary2 text-2xl" />
+       </div>
+
+   </div>
+   <div className=' font-poppins'>  
+       <p className='mb-5'>SHOP</p>
+       <ul className='space-y-4'>
+           <li>Products</li>
+           <li>Overview</li>
+           <li>Pricing</li>
+           <li>Releases</li>
+       </ul>
+   </div>
+   <div className=' font-poppins'>
+       <p className='mb-5'>COMPANY</p>
+       <ul className='space-y-4'>
+           <li>About</li>
+           <li>Contact</li>
+           <li>News</li>
+           <li>Support</li>
+       </ul>
+   </div>
+   <div className=' font-poppins'>
+       <h1 className='mb-6'>Stay up to date</h1>
+       <div>
+       <input type="email"  className='py-1 bg-transparent border-white border-2 solid px-3 text-white' placeholder='Enter your Email'/>
+       <button className='bg-primary2 text-sm py-2 px-3 text-center text-black '>SUBMIT</button>
+       </div>
+   </div>
+</div>
+{/*last part of the footer*/}
+<div className='w-full flex flex-row justify-center space-x-10' >
+<hr className="border-2 border-white solid w-[85vh]" />
+<ul className='text-white font-semibold flex flex-row gap-10 -mt-3 mb-20'>
+   <li>Terms</li>
+   <li>Privacy</li>
+   <li>Cookies</li>
+</ul>
+</div>
+</div>
     </div>
   )
 }
